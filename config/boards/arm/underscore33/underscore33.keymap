@@ -76,9 +76,9 @@ behaviors {
 // |  \  |  {  |  [  |  (  |  _  |  )  |  ]  |  }  |  .  |  `  |
 //             | CTL | ALT |  ENT | SPC | GUI  | CTL |
                         bindings = <
-   &bt BT_CLR   &reset      &out OUT_TOG  &trans &trans     &trans    &kp PG_DN &kp UP    &kp PG_UP &trans
+   &bt BT_CLR   &reset      &trans  &trans &trans     &trans    &kp PG_DN &kp UP    &kp PG_UP &trans
    &bt BT_SEL 0 &kp K_CMENU &trans  &trans &trans     &kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT &kp END
-   &bt BT_SEL 1 &bootloader &trans  &trans &trans     &trans    &trans    &trans    &trans    &trans
+   &bt BT_SEL 1 &trans &trans  &trans &trans     &trans    &trans    &trans    &trans    &trans
    &trans   &trans    &trans     &trans   &trans   &trans
                         >;
                 };
@@ -90,10 +90,10 @@ behaviors {
 // | BT1 | BOOT|     |      |     |      |      |      |      |      |
 //             | CTL | ALT |  ENT | SPC | GUI  | CTL |
                         bindings = <
-   &kp DQT   &kp UNDER &kp LBKT  &kp RBKT &kp CARET     &kp EXCL    &kp PG_DN &kp UP    &kp PG_UP &trans
-   &bt BT_SEL 0 &kp K_CMENU &trans  &trans &trans     &kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT &kp END
-   &bt BT_SEL 1 &bootloader &trans  &trans &trans     &trans    &trans    &trans    &trans    &trans
-   &trans   &trans    &trans     &trans   &trans   &trans
+   &kp DQT  &kp UNDER &kp LBKT  &kp RBKT &kp CARET     &kp EXCL    &kp LT &kp RT    &kp EQUAL &kp AMPS
+   &kp FSLH &kp MINUS &kp LBRC  &kp RBRC &kp STAR     &kp QUESTION  &kp LPAR  &kp RPAR  &kp APOS &kp COLON
+   &kp HASH &kp DOLLAR &kp PIPE  &kp TILDE &kp GRAVE     &kp PLUS    &kp PRCNT    &kp BACKSLASH    &kp AT    &trans
+   &out OUT_TOG   &bootloader    &trans     &trans   &trans   &trans
                         >;
                 };
 
