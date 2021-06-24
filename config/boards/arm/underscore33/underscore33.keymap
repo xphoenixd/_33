@@ -69,31 +69,31 @@ behaviors {
                         >;
                 };
 
-                sym_layer {
+                nav_layer {
 // -----------------------------------------------------------------------------------------
 // |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |
 // |  !  |  @  |  #  |  $  |  %  |  ^  |  &  |  *  |  =  |  -  |
 // |  \  |  {  |  [  |  (  |  _  |  )  |  ]  |  }  |  .  |  `  |
 //             | CTL | ALT |  ENT | SPC | GUI  | CTL |
                         bindings = <
-   &kp N1    &kp N2    &kp N3    &kp N4      &kp N5      &kp N6    &kp N7    &kp N8    &kp N9     &kp N0
-   &kp EXCL  &kp AT    &kp HASH  &kp DOLLAR  &kp PRCNT   &kp CARET &kp AMPS  &kp STAR  &kp EQUAL  &kp MINUS
-   &kp BSLH  &kp LBRC  &kp LBKT  &kp LPAR    &kp UNDER   &kp RPAR  &kp RBKT  &kp UNDER &kp DOT    &kp GRAVE
-   &trans    &trans    &trans    &trans      &trans      &trans
+   &bt BT_CLR   &reset      &out OUT_TOG  &trans &trans     &trans    &kp PG_DN &kp UP    &kp PG_UP &trans
+   &bt BT_SEL 0 &kp K_CMENU &trans  &trans &trans     &kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT &kp END
+   &bt BT_SEL 1 &bootloader &trans  &trans &trans     &trans    &trans    &trans    &trans    &trans
+   &trans   &trans    &trans     &trans   &trans   &trans
                         >;
                 };
 
-                nav_layer {
+                sym_layer {
 // -----------------------------------------------------------------------------------------
 // |BTCLR| RST |     |      |     |      | PGDN |  UP  | PGUP |      |
 // | BT0 |CMENU|     |      |     | HOME | LEFT | DOWN |RIGHT | END  |
 // | BT1 | BOOT|     |      |     |      |      |      |      |      |
 //             | CTL | ALT |  ENT | SPC | GUI  | CTL |
                         bindings = <
-   &kp DQT &kp UNDER &kp LBKT  &kp RBKT &kp CARET     &kp EXCL    &kp LT &kp RT    &kp EQUAL &kp AMPS
-   &bt BT_SEL 0 &kp K_CMENU &trans  &trans &trans     &kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT &kp END
-   &bt BT_SEL 1 &bootloader &trans  &trans &trans     &trans    &trans    &trans    &trans    &trans
-   &trans   &trans    &trans     &trans   &trans   &trans
+   &kp DQT  &kp UNDER  &kp LBKT  &kp RBKT  &kp CARET &kp EXCL     &kp LT    &kp RT        &kp EQUAL &kp AMPS
+   &kp FSLH &kp MINUS  &kp LBRC  &kp RBRC  &kp STAR  &kp QUESTION &kp LPAR  &kp RPAR      &kp APOS  &kp COLON
+   &kp HASH &kp DOLLAR &kp PIPE  &kp TILDE &kp GRAVE &kp PLUS     &kp PRCNT &kp BACKSLASH &kp AT    &trans
+   &out OUT_TOG   &bootloader    &trans     &trans   &trans   &trans
                         >;
                 };
 
