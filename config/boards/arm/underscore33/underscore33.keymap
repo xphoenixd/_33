@@ -89,7 +89,7 @@ behaviors {
 // | BT0 |CMENU|     |      |     | HOME | LEFT | DOWN |RIGHT | END  |
 // | BT1 | BOOT|     |      |     |      |      |      |      |      |
 //             | CTL | ALT |  ENT | SPC | GUI  | CTL |
-                }                        bindings = <
+                                        bindings = <
    &kp DQT &kp UNDER &kp LBKT  &kp RBKT &kp CARET     &kp EXCL    &kp LT &kp RT    &kp EQUAL &kp AMPS
    &kp DQT &kp UNDER &kp LBKT  &kp RBKT &kp CARET     &kp EXCL    &kp LT &kp RT    &kp EQUAL &kp AMPS
    &kp FSLH &kp MINUS &kp LBRC  &kp RBRC &kp STAR     &kp QUESTION  &kp LPAR  &kp RPAR  &kp APOS &kp COLON
@@ -97,6 +97,6 @@ behaviors {
    &out OUT_TOG   &bootloader    &trans     &trans   &trans   &trans
                         >;
 
-
+            };
         };
 };
