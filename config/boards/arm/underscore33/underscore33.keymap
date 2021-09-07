@@ -49,31 +49,31 @@ behaviors {
         };
         combo_apos {
             timeout-ms = <30>;
-            key-positions = <28 29>;
+            key-positions = <18 19>;
             bindings = <&kp APOS>;
             layers = <0>;
         };
         combo_left {
             timeout-ms = <30>;
-            key-positions = <15 16>;
+            key-positions = <15 25>;
             bindings = <&kp LEFT>;
             layers = <0>;
         };        
         combo_down {
             timeout-ms = <30>;
-            key-positions = <16 17>;
+            key-positions = <16 26>;
             bindings = <&kp DOWN>;
             layers = <0>;
         };
         combo_up {
             timeout-ms = <30>;
-            key-positions = <17 18>;
+            key-positions = <17 27>;
             bindings = <&kp UP>;
             layers = <0>;
         };
         combo_right {
             timeout-ms = <30>;
-            key-positions = <18 19>;
+            key-positions = <18 28>;
             bindings = <&kp RIGHT>;
             layers = <0>;
         };
