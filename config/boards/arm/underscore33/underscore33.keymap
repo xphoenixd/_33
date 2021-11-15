@@ -25,9 +25,9 @@ behaviors {
         compatible = "zmk,combos";
         combo_del {
           timeout-ms = <30>;
-          key-positions = <18 19>;
+          key-positions = <7 8>;
           bindings = <&kp DEL>;
-          layers = <1>;
+          layers = <0 1 2>;
          };
         combo_bspc {
             timeout-ms = <30>;
@@ -75,6 +75,12 @@ behaviors {
             timeout-ms = <30>;
             key-positions = <18 28>;
             bindings = <&kp RIGHT>;
+            layers = <0>;
+        };
+        combo_lgui {
+            timeout-ms = <30>;
+            key-positions = <30 31>;
+            bindings = <&kp LGUI>;
             layers = <0>;
         };
     };
