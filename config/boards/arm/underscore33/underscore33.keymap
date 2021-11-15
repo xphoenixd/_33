@@ -83,11 +83,7 @@ keymap {
     compatible = "zmk,keymap";
 
     default_layer {
-// -----------------------------------------------------------------------------------------
-// |  Q  |  W  |  E  |  R  |  T   |  Y  |  U   |  I  |  O  |  P  |
-// |  A  |  S  |  D  |  F  |  G   |  H  |  J   |  K  |  L  |  ;  |
-// |  Z  |  X  |  C  |  V  |  B   |  N  |  M   |  ,  |  .  |  /  |
-//             | CTL | ALT |  ENT | SPC | GUI  | CTL |
+
         bindings = <
             &hm LSHFT Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P
             &hm LCTRL A &hm LALT S &hm LCTRL D &hm LSHFT F &kp G   &kp H &hm RSHFT J  &hm RCTRL K  &hm LALT L  &hm RGUI SEMI
@@ -96,12 +92,7 @@ keymap {
         >;
     };
 
-    nav_layer {
-// -----------------------------------------------------------------------------------------
-// |BTCLR| RST |     |      |     |      | PGDN |  UP  | PGUP |      |
-// | BT0 |CMENU|     |      |     | HOME | LEFT | DOWN |RIGHT | END  |
-// | BT1 | BOOT|     |      |     |      |      |      |      |      |
-//             | CTL | ALT |  ENT | SPC | GUI  | CTL |
+    sym_layer {
         bindings = <
             &kp DQT  &kp UNDER  &kp LBKT &kp RBKT  &kp CARET &kp EXCL     &kp LT    &kp GT        &kp EQUAL &kp AMPS
             &kp FSLH &kp MINUS  &kp LBRC &kp RBRC  &kp STAR  &kp QUESTION &kp LPAR  &kp RPAR      &kp APOS  &kp COLON
@@ -110,12 +101,7 @@ keymap {
         >;
     };
 
-    sym_layer {
-// -----------------------------------------------------------------------------------------
-// |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |
-// |  !  |  @  |  #  |  $  |  %  |  ^  |  &  |  *  |  =  |  -  |
-// |  \  |  {  |  [  |  (  |  _  |  )  |  ]  |  }  |  .  |  `  |
-//             | CTL | ALT |  ENT | SPC | GUI  | CTL |
+    nav_layer {
         bindings = <
             &kp N1  &kp N2  &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
             &kp F1  &kp F2  &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10
